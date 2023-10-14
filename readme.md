@@ -29,7 +29,7 @@
 
  **Step 3: Configure the Application**
 
- Before you can use the application, you need to configure it. Create a `config.json` file in the project directory and set the following parameters:
+ Before you can use the application, you need to configure it. Create or edit `config.json` file in the project directory and set the following parameters:
 
  ```json
  {
