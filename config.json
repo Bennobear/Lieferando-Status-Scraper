@@ -1,0 +1,7 @@
+{
+    "token": "YOUR_DISCORD_BOT_TOKEN",
+    "channel_id": "YOUR_DISCORD_CHANNEL_ID",
+    "url": "https://www.lieferando.de/speisekarte/restaurant-name",
+    "check_interval": 300000,
+    "selector_timeout": 60000
+}

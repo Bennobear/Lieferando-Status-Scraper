@@ -1,0 +1,19 @@
+{
+  "name": "lieferando_status_checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lieferando_status_checker.js",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^14.13.0",
+    "puppeteer": "^21.3.8",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
