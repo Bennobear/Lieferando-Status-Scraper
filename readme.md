@@ -1,6 +1,6 @@
  Lieferando Status Checker
 
- This is a Node.js application that uses Puppeteer to scrape the status of a restaurant on Lieferando (a food delivery platform) and sends notifications to a Discord channel based on the restaurant's availability. It periodically checks the status of the restaurant and notifies you if it becomes available or unavailable.
+ This is a Node.js application that uses Puppeteer to scrape the status of a restaurant on Lieferando.de and sends notifications to a Discord channel based on the restaurant's availability. It periodically checks the status of the restaurant and notifies you if it becomes available or unavailable.
 
  Table of Contents
 - [Installation](#installation)
