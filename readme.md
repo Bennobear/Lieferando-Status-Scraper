@@ -82,7 +82,7 @@
 
  This project is a work in progress, and there are several improvements I'd like to make or changes that are needed:
 
-Currently, if the restaurant changes its delivery time while it's open, the script interprets this as a new status and posts another "restaurant open" message. This issue can be addressed by modifying the script to return custom status values rather than relying on the content of the div.
+~~Currently, if the restaurant changes its delivery time while it's open, the script interprets this as a new status and posts another "restaurant open" message. This issue can be addressed by modifying the script to return custom status values rather than relying on the content of the div.~~
 
 I also aim to implement a feature in the script that reads the last message upon startup and checks if the current status matches it. This will prevent the script from posting the same status twice when it's restarted.
 
