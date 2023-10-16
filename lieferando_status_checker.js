@@ -12,6 +12,9 @@ const url = config.url;
 const check_interval = config.check_interval;
 const selector_timeout = config.selector_timeout;
 
+const open = 'open';
+const closed = 'closed';
+
 const client = new Client({
     intents: [GatewayIntentBits.Guilds],
 });
@@ -36,7 +39,11 @@ async function scrapeRestaurantStatus() {
             () =>
                 document.querySelector('div[data-qa="shipping-type-switcher-delivery-availability-text"]').textContent
         );
-        return status;
+        if (status === 'Nicht verfügbar') {
+            return closed;
+        } else {
+            return open;
+        }
     } catch (error) {
         console.error('Scraping failed:', error);
         return null;
@@ -50,7 +57,7 @@ async function sendDiscordNotification(status) {
     const channel = await client.channels.fetch(channelId);
 
     if (status !== previousStatus) {
-        if (status === 'Nicht verfügbar') {
+        if (status = closed) {
             await channel.send('Restaurant closed!');
         } else {
             await channel.send('Restaurant open!');
